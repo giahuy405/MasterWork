@@ -1,0 +1,199 @@
+
+/* DARK THEME  */
+.dark nav.Mybreadcrumb{
+    background-color: var(--bg-color-dark2);
+}
+.dark .service{
+    background-color: var(--bg-color-dark);
+}
+.dark .Mybreadcrumb ol li{
+    color: var(--font-color-dark);
+}
+.dark .service__desc h2{
+    color: var(--font-color-dark);
+}
+.dark .service__item a:nth-child(2){
+    color: var(--font-color-dark);
+}
+.dark .strategy{
+    background-color: var(--bg-color-dark2);
+}
+.dark .service__item a:nth-child(1){
+    background-color: var(--bg-color-dark2);
+    box-shadow: var(--card-box-shadow-dark);
+}
+.dark .strategy__link a:first-child{
+    color: var(--font-color-dark);
+}
+.dark .strategy__number span{
+    background-color: var(--bg-color-dark);
+    box-shadow: var(--card-box-shadow-dark);
+}
+.dark .feature{
+    background-color: var(--bg-color-dark);
+}
+.dark .feature__item{
+    border-color: var(--border-color-dark);
+    color: var(--font-color-dark);
+}
+ 
+
+
+
+/* BREAD CRUMB */
+nav.Mybreadcrumb{
+    padding-top: 90px;
+    background-color: var(--light-bg-color);
+}
+.Mybreadcrumb .breadcrumb{
+    background-color: transparent;
+    font-size: 14px;
+}
+.Mybreadcrumb .breadcrumb-item+.breadcrumb-item::before{
+    display: none;
+}
+.Mybreadcrumb ol{
+    margin-bottom: 0;
+}
+.Mybreadcrumb ol li:nth-child(2){
+    font-size: 8px;
+    line-height: 24px;
+    margin: 0 8px;
+}
+.Mybreadcrumb ol li a{
+    color: var(--primary);
+}
+
+/* SERVICE  */
+.service__desc h2{
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.service__desc h4{
+    font-size: 24px;
+    color: var(--text-color-dark);
+    font-weight: normal;
+}
+.service__desc p{
+    margin: 20px 0 50px 0;
+    color: var(--text-color);
+}
+.service__item{
+    padding: 0 12px;
+}
+.service__item a:nth-child(1){
+    width: 80px;
+    height: 80px;
+    line-height:75px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--light-bg-color);
+    box-shadow: var(--card-box-shadow);
+}
+.service__item a:nth-child(2){
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--title-color);
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+}
+.service__item a:nth-child(2):hover{
+    color: var(--primary);
+}
+/* STRATEGY  */
+.strategy{
+    background-color: var(--light-bg-color);
+}
+.strategy__number span{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: var(--card-box-shadow);
+    color: var(--primary);
+    font-weight: 700;
+}
+.strategy__link a:first-child{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--title-color);
+    transition: .3s;
+    text-decoration: none;
+}
+.strategy__link a:first-child:hover{
+    color: var(--primary);
+}
+.strategy__link p{
+     line-height: 20px;
+     color: var(--text-color);
+}
+.strategy__pic{
+    transition: .5s;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.strategy__pic:hover{
+    transform: translateY(-6px);
+}
+/* FEATURE  */
+.feature__item{
+    border: 1px solid gainsboro;
+    padding: 30px;
+    border-radius: 6px;
+}
+.feature__item ul li{
+    list-style: none;
+    margin: 12px 0;
+    font-weight: 600;
+}
+.feature__item ul li i{
+    font-size: 12px;
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #dc4f7218;
+    color: var(--primary);
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.feature__item p{
+    color: var(--text-color);
+}
+
+
+@media screen and (max-width:991.98px) {
+    .strategy__number{
+        text-align: right;
+    }
+    .strategy__pic{
+        width: 300px;
+        margin: 20px auto 40px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .service__desc h2{
+        font-size: 30px;
+    }
+    .service__desc h4{
+        font-size: 20px;
+    }
+    .service__desc a.my__btn2{
+        padding: 10px 20px;
+    }
+    .service__item a:nth-child(2){
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:500px){
+    .feature__item h2{
+        font-size: 26px;
+    }
+}
+ 

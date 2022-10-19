@@ -1,0 +1,1068 @@
+:root {
+    --primary: #dc4f72;
+    --secondary: #0d5fa8;
+    --title-color: #2C3038;
+    --text-color: #5a5a5a;
+    --light-bg-color: #F7F9FC;
+    --card-curve: 6px;
+    --card-box-shadow: 1px 5px 7.5px rgba(196, 196, 196, 0.2);
+    --card-hover-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.09);
+    
+    --transformY: translateY(-0.5rem);
+    /* dark theme */
+    --font-color-dark: #ddd;
+    --bg-color-dark: #151515;
+    --bg-color-dark2:#222222;
+    --border-color-dark:#333333;
+    --text-color-dark:#999999;
+    --card-box-shadow-dark:1px 5px 7.5px black;
+    --card-hover-box-dark: 0 0.5rem 1rem black;
+}
+ /* khi CHƯA ấn nút hiển thị nav bar */
+ button.navbar-toggler.collapsed .fa-bars {
+    display: block;
+}
+
+button.navbar-toggler.collapsed .fa-xmark {
+    display: none;
+}
+
+/* khi ấn nút để hiển thị nav bar  */
+button.navbar-toggler .fa-bars {
+    display: none;
+}
+
+button.navbar-toggler .fa-xmark {
+    display: block;
+}
+
+/*======== Global ========*/
+/* thẻ a class button  */
+a.my__btn {
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--primary);
+    font-weight: 600;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    transition: .5s;
+    text-decoration: none;
+    /* nhớ thêm display: inline-block; */
+    display: inline-block;
+}
+.my__btn:hover {
+    background-color: var(--primary);
+    color: white;
+}
+a.my__btn2{
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    transition: .5s;
+    text-decoration: none;
+    /* nhớ thêm display: inline-block; */
+    display: inline-block;
+}
+.my__btn2:hover{
+    background-color: #ad3e5a;
+}
+#switchButton i {
+    font-size: 22px;
+}
+.section{
+    padding:  75px 0;
+}
+.title{
+    text-align: center;
+}
+.title h5{
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.title h2{
+    color: var(--title-color);
+    font-size: 46px;
+    max-width: 700px;
+    margin: 8px auto;
+}
+.title p{
+    color: var(--text-color);
+    max-width: 700px;
+    margin: 0 auto;
+}
+/* dark theme for title  */
+.dark .title h2{
+    color: var(--font-color-dark);
+}
+ 
+
+
+/*======= white theme =======*/
+#switchButton .fa-sun {
+    display: none;
+    color: var(--heading-color);
+
+}
+
+#switchButton .fa-moon {
+    display: block;
+
+}
+
+
+/*======= dark theme  ======*/
+.dark p{
+    color: var(--text-color-dark)!important;
+}
+.dark #switchButton .fa-sun {
+    display: block;
+    color: var(--font-color-dark);
+}
+
+.dark #switchButton .fa-moon {
+    display: none;
+}
+
+.dark header {
+    background-color: var(--bg-color-dark);
+    box-shadow: 0 0 10px 3px black;
+}
+.dark #nav-Masterwork .nav-item .nav-link{
+    color: var(--font-color-dark);
+}
+.dark .header__content .navbar-expand-lg .navbar-nav .dropdown-menu{
+    background-color: var(--bg-color-dark);
+    border: 1px solid var(--font-color-dark);
+}
+.dark .header__content .navbar-expand-lg .navbar-nav .dropdown-menu::after{
+    background-color: var(--bg-color-dark);
+}
+.dark .myCarousel{
+    background-image: linear-gradient(to right, rgba(202, 202, 202, 0.85),rgb(140 140 140 / 85%)), url(../img/banner.jpg);
+}
+.dark .myCarousel__caption p{
+    color: black!important;
+}
+
+.dark .header__content .dropdown-menu .dropdown-item{
+    color: var(--font-color-dark);
+}
+/* Dark Tool  */
+.dark .tool{
+    background-color: var(--bg-color-dark2);
+}
+.dark .tool__card{
+    background-color: var(--bg-color-dark);
+    border-color: var(--border-color-dark);
+}
+.dark .tool__card h4{
+    color: var(--font-color-dark);
+}
+.dark .tool__card:hover {
+    box-shadow: 0px 10px 20px 0px black;
+}
+/* Dark AboutCompany */
+.dark .aboutCompany{
+    background-color: var(--bg-color-dark);
+}
+.dark .aboutCompany__pic img{
+    box-shadow: 0 10px 10px 3px black;
+}
+/* Dark Number  */
+.dark .number{
+    background-color: var(--bg-color-dark);
+}
+.dark .number__card h5{
+    color: var(--font-color-dark);
+}
+.dark .number__card{
+    box-shadow: 0 6px 10px 0px black;
+    border-color: var(--border-color-dark);
+}
+.dark .number__card:hover{
+    box-shadow: 0 6px 10px 5px black;
+}
+/* Dark Solution  */
+.dark .solution{
+    background-color: var(--bg-color-dark);
+}
+.dark .solution__card{
+    background-color: var(--bg-color-dark2);
+    border-color: var(--border-color-dark);
+    box-shadow: var(--card-box-shadow-dark);
+}
+.dark .solution__card:hover{
+    box-shadow: var(--card-hover-box-dark);
+}
+.dark .solution__desc a{
+    color: var(--font-color-dark);
+}
+.dark .solution__desc a{
+    color: var(--primary);
+}
+.dark .solution__know-more{
+    border-color: var(--border-color-dark);
+}
+/* Dark FAQ  */
+.dark .FAQ{
+    background-color: var(--bg-color-dark2);
+}
+.dark .FAQ__page ul li{
+    background-color: var(--border-color-dark);
+    border: var(--border-color-dark);
+}
+.dark .FAQ__page ul li h5{
+    color: var(--font-color-dark);
+}
+.dark .FAQ__page ul li i::before,.dark .FAQ__page ul li i::after{
+    background-color: var(--font-color-dark);
+}
+.dark .FAQ__page ul li input[type=checkbox]:checked ~ i::before,.dark .FAQ__page ul li input[type=checkbox]:checked ~ i::after{
+    background-color: var(--font-color-dark);
+}
+.dark .FAQ__pic{
+    box-shadow: var(--card-box-shadow-dark);
+}
+/* Dark Project  */
+.dark .project{
+    background-color: var(--bg-color-dark);
+}
+.dark .project__content .nav .nav-link{
+    color: var(--font-color-dark);
+}
+.dark .project__desc h3{
+    color: var(--font-color-dark);
+}
+.dark .project__desc h5{
+    color: var(--font-color-dark);
+}
+/* Dark Accordion  */
+.dark #accordionProject .btn-link.collapsed{
+    background-color: var(--bg-color-dark2);
+    color: var(--font-color-dark);
+}
+.dark #accordionProject .card{
+    border-color: var(--border-color-dark);
+}
+.dark #accordionProject .card-body{
+    background-color: var(--bg-color-dark2);
+}
+.dark #accordionProject .btn-link{
+    background-color: var(--bg-color-dark);
+}
+/* Dark Testimonial  */
+.dark .testimonial{
+    background-image: linear-gradient(to top,rgb(0 0 0 / 69%),rgb(0 0 0 / 68%)),url(../img/b2.jpg);
+}
+.dark .testimonial__slide{
+    background-color: var(--bg-color-dark2);
+}
+/* Dark Build Brand  */
+.dark .buildBrand{
+    background-color:var(--bg-color-dark);
+}
+/* Dark footer  */
+.dark footer{
+    background-color: var(--bg-color-dark);
+}
+.dark .footer__content h5{
+    color: var(--font-color-dark);
+}
+.dark .footer__link a{
+    color: var(--text-color-dark);
+}
+.dark .copyright__content{
+    color: var(--text-color-dark);
+}
+.dark .copyright__icon a{
+    color: var(--font-color-dark);
+}
+.dark .card-body{
+    background-color: var(--bg-color-dark2);
+}
+.dark .footer__form.card{
+    border-color: var(--border-color-dark);
+}
+.dark footer .border-top{
+    border-color: var(--border-color-dark)!important;
+}
+.dark .project__mobile .card-header .btn-link.btn-link i{
+    border-bottom-color: var(--primary);
+  
+}
+.dark .project__mobile .card-header .btn-link.btn-link.collapsed i{
+    border-bottom-color: var(--font-color-dark);
+}
+.dark .footer__form input{
+    background-color: #323232;
+    border-color: var(--border-color-dark);
+    color: var(--font-color-dark);
+}
+/* ====== HEADER ======= */
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    box-shadow: 0 0 10px 3px gainsboro;
+    background-color: white;
+    z-index: 10000;
+    transition: .5s;
+}
+.menu.menu--active{
+    padding: 6px;
+}
+
+.header__content .navbar-brand {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.header__content .navbar-brand span {
+    font-weight: 700;
+}
+.header__content .nav-link.dropdown-toggle i{
+    font-size: 11px;
+}
+#nav-Masterwork .nav-item {
+    margin: 0 15px;
+}
+ 
+#nav-Masterwork{
+    padding-right: 30px;
+}
+.header__content .navbar-toggler .navbar-toggler-icon{
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: var(--primary);
+    border-radius: 4px;
+    color: white;
+}
+.header__content .navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+}
+#nav-Masterwork .nav-item.active .nav-link{
+    color: var(--primary);
+}
+#nav-Masterwork .nav-link{
+    color: black;
+    padding: 4px 0;
+}
+#nav-Masterwork .line{
+    position: relative;
+    /* nhớ thêm display: inline-block 
+     để line được bọc cùng chữ */
+    display: inline-block;
+    transition: .5s;
+}
+#nav-Masterwork .line::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: var(--primary); 
+    transition: .5s;
+}
+#nav-Masterwork .line:hover::before{
+    width: 25px;
+}
+ 
+#nav-Masterwork .line:hover{
+    color: var(--primary)!important;
+}
+.header__content .navbar-expand-lg .navbar-nav .dropdown-menu{
+     transform: translateX(-50px);
+     margin-top: 20px;
+    padding: 10px 50px 15px 20px;
+}
+.header__content .navbar-expand-lg .navbar-nav .dropdown-menu::after{
+    content: '';
+    width: 14px;
+    height: 14px;
+    display: block;
+    border: 1px solid rgb(235, 235, 235);
+    background-color: white;
+    border-radius: 0;
+    border-right: 0;
+    border-bottom: 0;
+    position: absolute;
+    top: -3px;
+    left: 44%;
+    transform: rotate(45deg) translateX(-50%);
+    
+}
+.header__content .dropdown-menu .dropdown-item{
+    padding: 5px 0;
+    transition: .5s;
+}
+.header__content .dropdown-menu .dropdown-item:hover{
+    background-color: transparent;
+}
+.header__content .dropdown-item:hover{
+    color: var(--primary);
+}
+.header__content .dropdown-toggle::after {
+    display: none;
+}
+/*======== CAROUSEL ========*/
+ 
+.myCarousel{
+    padding-top: 100px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.85),rgba(255, 255, 255, 0.85)), url(../img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* position: relative; */
+}
+/* nên dùng linearGradient cho lớp overlay
+thay vì ::before lên img vì gọn code hơn  */
+/* .myCarousel::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+} */
+ 
+ 
+.myCarousel__caption h2{
+    font-size: 50px;
+    color: var(--title-color);
+}
+.myCarousel__caption p{
+    font-size: 20px;
+    color: var(--text-color);
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+.myCarousel__caption .my__btn{
+    padding: 15px 38px;
+    
+}
+.myCarousel__pic{
+    transform: rotate(180deg) ;
+}
+/* ========  TOOL ======== */
+.tool__header .title p{
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--text-color);
+}
+.tool__card{
+    border-radius: 6px;
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--light-bg-color);
+    padding: 40px 30px;
+    transition: .5s;
+}
+.tool__card h4{
+    margin: 20px 0;
+}
+.tool__card p{
+    color: var(--text-color);
+  
+}
+.tool__card:hover{
+    transform: translateY(-5px);
+    box-shadow:0px 10px 20px 0px gainsboro;
+}
+/*===== ABOUT COMPANY  =======*/
+.aboutCompany{
+    background-color: var(--light-bg-color);
+}
+.aboutCompany__caption .title h2{
+    font-size: 35px;
+    max-width: unset;
+}
+.aboutCompany__caption .title p{
+    margin: 25px 0 50px 0 ;
+}
+.aboutCompany__pic img{
+    border-radius: 8px;
+    box-shadow: 0 10px 10px 3px gainsboro;
+}
+/*===== NUMBER =======*/
+ 
+.number__card{
+    border: 1px solid gainsboro;
+    box-shadow: 0 6px 10px 0px gainsboro;
+    border-radius: 6px;
+    padding: 30px;
+    transition: .5s;
+     
+}
+.number__card:hover{
+    box-shadow: 0 6px 8px 5px gainsboro;
+}
+.number__card h5{
+    font-size: 16px;
+}
+.number__card h2{
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--primary);
+}
+.number__card p{
+    color: var(--text-color);
+}
+/* ========= PERFORM ======== */
+.perform__content{
+    max-width: 540px;
+}
+.perform{
+    background-image: linear-gradient(to right, #000000a2,#000000a2), url(../img/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* position: relative;
+    z-index: 5; */
+}
+/* nên dùng linearGradient lên image để ít code hơn 
+và đặt đúng thứ tự linear trước url  */
+/* .perform::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a2;
+    z-index: -1;
+} */
+.perform__content h4{
+    font-size: 30px;
+    color: white;
+}
+.perform__content p{
+    color: white!important;
+    margin: 20px 0 50px 0;
+}
+.perform__content .my__btn2{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+.perform__content .my__btn2:hover{
+    opacity: 0.75;
+}
+/* ========= SOLUTION ======= */
+.solution__card{
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--card-box-shadow);
+    transition: .5s;
+}
+.solution__desc{
+    padding: 25px 25px 0 25px; 
+}
+.Mylabel{
+    font-size: 14px;
+    padding: 5px 15px;
+    border-radius: 18px;
+    background-color:rgba(238, 97, 120, 0.2);
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.label-red{
+    color: var(--primary);
+}
+.label-green{
+    color: #05ae05;
+    background-color: rgba(0, 128, 0, 0.2);
+}
+.label-blue{
+    color: #6767ff;
+    background-color: rgba(0, 0, 255, 0.2);
+}
+.solution__pic{
+    position: relative;
+    z-index: 2;
+}
+.solution__pic img{
+    filter: grayscale(1);
+    transition: .4s;
+}
+.solution__card:hover img{
+    filter: grayscale(0);
+}
+.solution__pic::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.solution__label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary);
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    z-index: 10;
+}
+.solution__desc a{
+    font-size: 22px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: .5s;
+    margin-bottom: 15px;
+}
+.solution__desc a:hover{
+    color: var(--primary);
+}
+.solution__desc p{
+    color: var(--text-color);
+}
+.solution__know-more{
+    padding: 20px 0;
+    border-top: 1px solid gainsboro;
+}
+.solution__know-more a{
+    font-size: 16px;
+    color: var(--primary);
+}
+.solution__know-more i{
+    font-size: 12px;
+    transition: .5s;
+}
+.solution__card:hover .solution__know-more i{
+    transform: translateX(5px);
+}
+.solution__card:hover{
+    transform: translateY(-8px);
+    box-shadow: var(--card-hover-box-shadow);
+}
+/* FAQ  */
+.FAQ{
+    background-color: var(--light-bg-color);
+}
+.FAQ__pic{
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow:0 0.5rem 1rem rgb(0 0 0 / 15%)  ;
+    /* thêm sticky để ảnh lướt theo màn hình  */
+    position: sticky;
+    top: 90px;
+    transition: .5s;
+}
+.FAQ__pic:hover{
+    transform: translateY(-7px);
+}
+.FAQ__page ul li{
+    position: relative;
+    background-color: white;
+    padding: 25px 50px 25px 20px;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+/* dùng input[type=checkbox] để collapse nội dung */
+.FAQ__page ul li input[type=checkbox]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    /* lớp của checkbox phải thấp hơn content thẻ p */
+    z-index: 5;
+    padding: 0;
+    /* opacity:0 để tắt dấu tick checkbox */
+    opacity: 0;
+}
+.FAQ__page ul li i{
+    position: absolute;
+    right: 25px;
+    top: 30px;
+}
+.FAQ__page ul li p{
+    transition: .3s;
+    /* dùng position:relative để chỉnh margin-top được  */
+    position: relative;
+    margin: 15px 0 0 0;
+    /* lớp của thẻ p phải cao hơn checkbox lớp 6*/
+    z-index: 6;
+}
+.FAQ__page ul li input[type=checkbox]:checked ~ p{
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    transform: translate(0, 50%);
+}
+.FAQ__page ul li i::before,.FAQ__page ul li i::after{
+    content: '';
+    position: absolute;
+    background-color: var(--title-color);
+    width: 3px;
+    height: 9px;
+    transition: .5s;
+}
+
+.FAQ__page ul li i::after{
+    transform: rotate(45deg) translateX(-3px);
+}
+.FAQ__page ul li i::before{
+    transform: rotate(-45deg) translateX(3px);
+}
+/* trạng thái arrow ban đầu  */
+.FAQ__page ul li input[type=checkbox]:checked ~ i::after{
+    transform: rotate(45deg) translateX(3px);
+}
+.FAQ__page ul li input[type=checkbox]:checked ~ i::before{
+    transform: rotate(-45deg) translateX(-3px);
+}
+/* ==== PROJECT ====  */
+.project__content{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.project__content .nav .nav-item{
+    width: 33.333%;
+  
+}
+
+.project__content .nav .nav-link{
+    width: 100%;
+    font-weight: 700;
+    border-width: 0 0 3px 0;
+    border-color: gainsboro;
+    color: var(--text-color);
+}
+.project__content .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: var(--primary);
+    border: initial;
+    border-bottom: 3px solid var(--primary);
+    background-color: transparent;
+}
+.project__content .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+     border-width: 0 0 3px 0;
+}
+.project__content .nav-tabs .nav-item{
+    font-size: 22px;
+}
+.project__mobile{
+    display: none;
+}
+.project__pic{
+    transition: .5s;
+}
+.project__pic:hover{
+    transform: translateY(-5px); 
+}
+.project__desc p{
+    margin: 15px 0;
+}
+/* Accordion for mobile  */
+#accordionProject .card-header{
+    padding: 0;
+}
+#accordionProject .btn-link{
+    text-decoration: none;
+    color: var(--primary);
+    border-radius: 0;
+    border-width:  0 0 3px 0;
+    border-color: var(--primary);
+}
+#accordionProject .btn-link.collapsed{
+   color: black;
+   border: none;
+}
+#accordionProject .btn-link:focus{
+  box-shadow: unset;
+}
+#accordionProject .card{
+    border-radius: 0;
+}
+/* ====== TESTMONIAL ====== */
+.testimonial{
+    background-size: cover;
+    background-image: linear-gradient(to top,rgba(255, 255, 255, 0.692),rgba(255, 255, 255, 0.682)),url(../img/b2.jpg);
+    background-attachment: fixed;
+}
+.testimonial__slide{
+    background-color: white;
+    padding: 30px;
+    /* dùng grid thay vì flex để ko bị 
+    móp ảnh  */
+    display: grid;
+    /* chia auto để tự co dãn theo ảnh */
+    grid-template-columns: auto 1fr;
+}
+.testimonial__pic{
+    width:100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    border: 3px solid var(--primary);
+}
+.testimonial__pic img{
+   object-position: center;
+    min-height: 100%;
+    width: 100%;
+}
+.testimonial__desc{
+    margin-left: 50px;
+    position: relative;
+    z-index: 5;
+}
+.testimonial__desc i{
+    position: absolute;
+    top: -3px;
+    left: -42px;
+    font-size: 35px;
+    color:#dddd;
+}
+.testimonial__sliders .owl-theme .owl-dots .owl-dot span{
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    border-radius: 0;
+}
+.testimonial .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background-color: var(--primary);
+}
+.testimonial .owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 30px;
+}
+.testimonial__desc h5{
+    font-size: 18px;
+    color: var(--primary);
+    font-weight: 300;
+}
+.testimonial__desc span{
+    font-size: 14px;
+}
+/*======== Footer ======= */
+footer{
+    background-color: var(--light-bg-color);
+}
+/* nên dùng dflex thay vì grid  */
+.footer__form input{
+    width: 70%;
+    padding: 12px 20px;
+    background-color: var(--light-bg-color);
+    border: 0;
+    border-radius: 6px;
+    outline: none;
+}
+.footer__form a.my__btn2{
+     width: 30%;
+     text-align: center;
+     color: white;
+}
+.footer__form a.my__btn2:hover{
+    color: white;
+}
+.footer__form h5{
+    font-size: 18px;
+    font-weight: normal;  
+}
+.footer__form p{
+    color: var(--text-color);
+}
+.footer__link ul{
+    list-style: none;
+  
+}
+.footer__link li{
+    margin: 8px 0;
+}
+.footer__link h5{
+    margin-bottom: 25px;
+}
+.footer__link a{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: .5s;
+}
+.footer__link a:hover{
+    color: var(--primary)
+    
+}
+.copyright__icon a{
+    color: black;
+    transition: .5s;
+}
+.copyright__icon a:hover{
+    color: var(--primary);
+}
+
+/*======== backToTop ======= */
+.backToTop {
+    color: black;
+    position: fixed;
+    bottom: 90px;
+    right: 0px;
+    
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: var(--primary);
+    
+    color: white;
+    font-size: 20px;
+    transition: .5s;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+}
+.backToTop:hover {
+    text-decoration: none;
+    color: white;
+    transform: translateY(-6px);
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+ 
+@media screen and (max-width:991.98px) {
+    .header__content {
+        position: relative;
+    }
+
+    .switchButton-mobile {
+        position: absolute;
+        top: 21px;
+        right: 8%;
+    }
+    .header__content .navbar-collapse{
+        text-align: center;
+    }
+    .header__content .navbar-collapse{
+        margin-top: 20px;
+    }
+    #nav-Masterwork .nav-item{
+        margin: 6px 15px;
+    }
+    .header__content .navbar-expand-lg .navbar-nav .dropdown-menu{
+        transform: translateX(18px);
+        text-align: center;
+    }
+    #nav-Masterwork .line::before{
+        left: unset;
+    }
+
+
+    .myCarousel{
+        padding-top: 150px;
+    }
+    .FAQ__page ul li h5{
+        font-size: 18px;
+    }
+    .project__desc h3{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .switchButton-mobile {
+        right: 10%;
+    }
+    .title h2{
+        font-size: 35px;
+    }
+    .project__desktop{
+        display: none;
+    }
+    .project__mobile{
+        display: block;
+    }
+    .project__mobile .card-header{
+        position: relative;
+    }
+    .project__mobile .card-header .btn-link.btn-link i{
+        position: absolute;
+        top: 11px;
+        right: 17px;
+        border-bottom: 15px solid var(--primary);
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        display: block;
+        transition: .4s;
+    }
+    .project__mobile .card-header .btn-link.btn-link.collapsed i{
+        transform: rotate(180deg);
+        border-bottom: 15px solid var(--border-color-dark);
+    }
+}
+@media screen and (max-width:670px){
+    .testimonial__slide{
+        display: block;
+        text-align: center;
+    }
+    .testimonial__desc{
+        margin: 0;
+    }
+    .testimonial__desc i{
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        top: -6px;
+    }
+    .testimonial__pic{
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width:575.98px){
+    .myCarousel__caption h2{
+        font-size: 38px;
+    }
+}
+@media screen and (max-width:500px) {
+    .switchButton-mobile {
+        top: 19.5px;
+        right: 15%;
+    }
+    .header__content .navbar-brand{
+        font-size: 22px;
+    }
+    .perform__content h4{
+        font-size: 26px;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    .switchButton-mobile {
+        right: 17%;
+    }
+    .myCarousel__caption h2{
+        font-size: 34px;
+    }
+    .title h2{
+        font-size: 30px;
+    }
+    .footer__form a.my__btn2{
+        width: 20%;
+        padding: 12px;
+    }
+    .footer__form input{
+        width: 78%;
+        margin-right: 6px;
+    }
+}
